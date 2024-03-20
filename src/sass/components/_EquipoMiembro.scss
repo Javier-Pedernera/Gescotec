@@ -1,7 +1,7 @@
 .equipo-item {
     
-    border: 1px solid #eee;
-    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 20px;
     transition: transform 0.3s ease;
   
     &:hover {
@@ -26,7 +26,7 @@
         border-radius: 50%; // Convertir en un círculo perfecto
       }
     }
-  
+   
     .MuiCardContent-root {
       padding: 20px;
   
@@ -73,7 +73,7 @@
 .link_in{
     display: flex;
     justify-content: flex-end;
-    width: 10%;
+    width: 15%;
     color: #1C8BBF;
 }  
 .exp_in{
@@ -89,4 +89,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.seccInfo{
+    margin-top: 20px;
+    background-color: #f4f2f2;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.equipo-item.css-bhp9pd-MuiPaper-root-MuiCard-root{
+    border-radius: 20px;
 }

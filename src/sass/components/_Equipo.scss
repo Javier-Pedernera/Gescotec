@@ -19,37 +19,39 @@
       }
     }
   
-    .miembro-equipo-card {
-      .card {
-        border: 1px solid #eee;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
+    // .miembro-equipo-card {
+        
+    //   .card {
+    //     border: 1px solid #eee;
+    //     border-radius: 10px;
+    //     transition: transform 0.3s ease;
   
-        &:hover {
-          transform: translateY(-5px);
-        }
+    //     &:hover {
+    //       transform: translateY(-5px);
+    //     }
   
-        .card-content {
-          padding: 20px;
+    //     .card-content {
+    //       padding: 20px;
   
-          .nombre {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #333;
-          }
+    //       .nombre {
+    //         font-size: 1.5rem;
+    //         font-weight: 700;
+    //         color: #333;
+    //       }
   
-          .cargo {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 10px;
-          }
+    //       .cargo {
+    //         font-size: 1.2rem;
+    //         color: #666;
+    //         margin-bottom: 10px;
+    //       }
   
-          .experiencia {
-            font-size: 1rem;
-            color: #888;
-          }
-        }
-      }
-    }
+    //       .experiencia {
+    //         font-size: 1rem;
+    //         color: #888;
+    //       }
+    //     }
+    //   }
+    // }
   }
+  
   

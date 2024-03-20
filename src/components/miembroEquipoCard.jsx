@@ -10,7 +10,7 @@ const MiembroEquipo = ({ nombre, cargo, experiencia, foto, linkedin }) => {
             <div className="equipo-item__foto-container">
                 <img src={foto} alt={nombre} className="equipo-item__foto" />
             </div>
-            <CardContent>
+            <CardContent className='seccInfo'>
                 <div className='Nombre_cargo'>
                     <Typography variant="h6" component="h2">
                         {nombre}

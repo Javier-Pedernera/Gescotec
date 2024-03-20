@@ -27,7 +27,7 @@ const Equipo = () => {
                 <Grid container spacing={3}>
                     {equipoData.map((miembro, index) => (
                         <Grid item xs={12} sm={6} md={4} key={index}>
-                            <MiembroEquipo {...miembro} />
+                            <MiembroEquipo className="cardMiembro" {...miembro} />
                         </Grid>
                     ))}
                 </Grid>
