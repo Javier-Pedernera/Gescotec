@@ -1,0 +1,153 @@
+.home {
+  padding: 20px;
+  &.blur{
+    filter: blur(3px);
+  }
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  padding-top: 3%;
+
+  .hero-text {
+    max-width: 600px;
+    @media (max-width: 1500px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 1240px) {
+      min-width: 95%;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.questions-section {
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+.imageParallax{
+  border-radius:150px;
+  max-width: 90%;
+  
+  max-height: auto;
+  min-height: 300px;
+}
+
+
+
+.text-overlay {
+  font-size: small;
+  color: var(--primary-color);
+  width: 90%;
+  position: absolute;
+  // top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.questions-section {
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .card-container {
+    padding: 20px; /* Añadimos un poco de espacio interno a la sección */
+  
+  }
+}
+.descripAque{
+  font-size: large;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.imageParallax2{
+  display: flex;
+  flex-direction: row;
+  border-radius:10px;
+  max-width: 90%;
+  min-height: 400px;
+  & div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    font-size: large;
+    
+  }
+}
+.aQuenosded{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cardConteiner3{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1240px) {
+  .hero-section {
+    
+    flex-direction: row; // Cambia la dirección a fila en dispositivos más grandes
+  }
+ 
+
+  .questions-section {
+    .card-container {
+      // flex-direction: row; // Cambia la dirección a fila en dispositivos más grandes}
+      gap: 20px; // Añade espacio entre las tarjetas
+    }
+  }
+}
+
+@media (min-width: 1240px) {
+  .imageParallax{
+    max-width: 600px;
+  }
+}
+
+.hero-text {
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    animation: slideInLeft 1s ease; // Aplica la animación al texto
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%); // Mueve el texto desde la izquierda
+    opacity: 0; // Inicialmente transparente
+  }
+  to {
+    transform: translateX(0); // Llega a su posición original
+    opacity: 1; // Se vuelve completamente visible
+  }
+}

@@ -1,0 +1,30 @@
+
+.div_Form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    & .submit_btn{
+    background-color: #1c8bbf;
+    &:hover{
+     background-color: var(--secundary-color);   
+    }
+}
+}
+form{
+    margin-bottom: 100px;
+    & hr{
+        border-top: #BCBCBC;
+        border-left: #BCBCBC;
+        border-color: #BCBCBC;
+    }
+}
+// div.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+//     // background-color: #1c8bbf;
+//     &:hover{
+//         outline: red;
+        
+// }
+//         &:focus-visible {
+//     outline: none;
+// }
+// }

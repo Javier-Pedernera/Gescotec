@@ -1,0 +1,102 @@
+.services-section {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  
+    h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+  
+    .service {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      border-radius: 10px;
+    //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+    //   margin-bottom: 40px;
+  
+      img {
+        width: 100%;
+
+        border-radius: 150px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  
+      div {
+        flex: 1;
+        margin-left: 20px;
+        text-align: left;
+  
+        h3 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+  
+        p {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+  
+        ul {
+          margin-left: 20px;
+  
+          li {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+     .service2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid var(--terterary-color);
+        // background-color: var(--terterary-color);
+        border-radius: 10px;
+      //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+      //   margin-bottom: 40px;
+    
+        img {
+          width: 100%;
+  
+          border-radius: 150px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        div {
+          flex: 1;
+          margin-left: 20px;
+          text-align: left;
+    
+          h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+          }
+    
+          p {
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+    
+          ul {
+            margin-left: 20px;
+    
+            li {
+              font-size: 16px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+  }
+
+ 
+  .imagenesDiv{
+    height: 100%;
+    width: 100%;
+  }
