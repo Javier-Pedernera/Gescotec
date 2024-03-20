@@ -1,8 +1,11 @@
+import { useTheme } from '../contexts/ThemeContext';
 import '../sass/components/_Servicios.scss'; // Importa los estilos para esta sección
 
 const Servicios = () => {
+    const { openMenu, setOpenMenu } = useTheme();
+
     return (
-        <section className="services-section">
+        <section className={`services-section ${openMenu? 'blur':''}`}>
             <h2>Nuestros Servicios</h2>
             <div className="service">
                 <div className='imagenesDiv'>
