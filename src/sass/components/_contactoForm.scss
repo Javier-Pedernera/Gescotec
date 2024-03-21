@@ -9,6 +9,13 @@
     &.blur{
         filter: blur(4px);
     }
+    & h4{
+        font-family: var(--font-robotoSerif);
+        @media (max-width: 768px) {
+            font-size: large;
+            font-weight: 600;
+          }
+    }
 }
 .css-1oqqzyl-MuiContainer-root{
     display: flex;
@@ -26,8 +33,25 @@
 }
 }
 form{ 
+    
     width: 80%;
     margin-bottom: 100px;
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      & .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+        font-family: var(--font-robotoSerif);
+        color: #505050;
+        font-size: small;
+        font-weight: 500;
+      }
+      & .MuiTypography-root.MuiTypography-body1.MuiFormControlLabel-label.css-ahj2mt-MuiTypography-root{
+        font-family: var(--font-poppins);
+        font-size: 13px;
+        font-weight: 400;
+        color: #505050;
+      }
     & hr{
         border-top: #BCBCBC;
         border-left: #BCBCBC;
