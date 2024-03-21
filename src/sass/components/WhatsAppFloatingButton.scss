@@ -1,0 +1,88 @@
+// .whatsapp-float-button {
+//     position: fixed;
+//     display: flex;
+//     align-items: end;
+
+//     // bottom: 10%;
+//     right: 5%;
+//     width: 50px;
+//     height: 50px;
+//     background-color: aqua;
+//     border-radius: 50%;
+//     border: none;
+//     cursor: pointer;
+//     justify-content: end;
+//     transition: tranform 0.3s ease;
+//   }
+.whatsapp-float-button {
+    min-width: 300px;
+}
+//   .whatsapp-float-button:hover {
+//     // transform: translateX(100%); 
+//     // content: 'Escríbenos';
+//     // position: absolute;
+//     transform: scale(1.4,0.8);
+//     background-color: #1A980F;
+//     // color: white;
+//     // padding: 5px 10px;
+//     // border-radius: 5px;
+//     // bottom: 70%;
+//      /* Ajusta el valor para controlar la posición del rectángulo emergente */
+//   }
+  
+//   .whatsAppIco{
+//     color: rgb(23, 166, 50);
+//     width: 50px;
+//     height: 50px;
+    
+//   }
+.image_divWapp {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-image: url('../../assets/images/wapp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10%;
+    cursor: pointer;
+  
+    .textEscribe {
+      position: absolute;
+      top: 50%;
+    //   left: 100%;
+    //   transform: translate(-50%, -50%);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      min-width: 150px;
+      background-color: transparent;
+      color: white;
+      height: 35px;
+      margin-right: 3px;
+      border-radius: 10px;
+      padding: 5px;
+      white-space: nowrap;
+      animation: appear 0.7s ease forwards;
+    z-index: -1; // Cambiado el índice Z a 0
+    }
+  
+    &:hover {
+      .textEscribe {
+        display: flex;
+        background-color: #0f8d08cb;
+        // min-width: 150px;
+        z-index: -1;
+      }
+    }
+  
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translate(-50%, -50%) translateX(50%);
+      }
+      to {
+        opacity: 1;
+        transform: translate(-90%, -50%);
+      }
+    }
+  }

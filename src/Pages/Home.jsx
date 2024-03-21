@@ -4,6 +4,10 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 import Card from '../components/cardPreguntas';
 import { useTheme } from '../contexts/ThemeContext';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { IoDocumentTextOutline } from 'react-icons/io5';
+import { GrAdd } from "react-icons/gr";
+import { BsGraphUpArrow } from "react-icons/bs";
 
 const Home = () => {
 
@@ -12,15 +16,15 @@ const Home = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-          const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
-          if (scrollTop + clientHeight >= scrollHeight && !showBubble) {
-            setShowBubble(true);
-          }
+            const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+            if (scrollTop + clientHeight >= scrollHeight && !showBubble) {
+                setShowBubble(true);
+            }
         };
-    
+
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-      }, [showBubble]);
+    }, [showBubble]);
 
 
     const cardsData = [
@@ -66,11 +70,13 @@ const Home = () => {
                     className="imageParallax"
                 >
                 </ParallaxBanner>
+
                 {/* <img src={companyImage} alt="Empresa" className="company-image" /> */}
                 {/* <div className="hero-text">
                     <h1>La inteligencia artificial para disminuir los costos de desarrollo de software y aumentar el rendimiento de tu empresa.</h1>
                 </div> */}
             </div>
+
             <div className="questions-section">
                 {/* <h2>Preguntas:</h2> */}
 
@@ -79,12 +85,20 @@ const Home = () => {
                     <div className="aQuenosded">
                         <h2>¿A qué nos dedicamos?</h2>
                         <div className='descripAque'>Nos dedicamos a ofrecer soluciones de ingeniería de software de alta calidad utilizando tecnologías de inteligencia artificial.</div>
+
                         <ParallaxBanner
-                            layers={[{ image: 'https://res.cloudinary.com/dbwmesg3e/image/upload/v1710868840/GescotecPage/1681688753987_yg9ybx.jpg', opacity: [0.5, 1], speed: -15 },
+                            layers={[{ image: 'https://res.cloudinary.com/dbwmesg3e/image/upload/v1710868840/GescotecPage/1681688753987_yg9ybx.jpg', opacity: [0.5, 1], speed: -13 },
                             ]
                             }
                             className="imageParallax2"
                         >
+                            <div className='cont_btn'>
+                                <div className="more_btn"> <GrAdd /> <Link to="/contactanos" className="link_pres_btn" > sobre nosotros</Link >
+                                </div>
+                                <div className="pres_btn">  <Link to="/contactanos" className="link_pres_btn" > Presupuesto</Link > <IoDocumentTextOutline />
+                                </div>
+                            </div>
+
                         </ParallaxBanner>
 
 
@@ -107,7 +121,9 @@ const Home = () => {
                     <div className="cards-container">
 
                     </div>
-                    {showBubble ? <div className={`bubble ${showBubble? "show": "" }` }>Estos beneficios combinados aumentan la productividad, mejoran la calidad del software y permiten una mayor personalización y adaptación a las necesidades de los usuarios.</div> : <div className='bubble'></div>}
+                    {showBubble ? <div className={`bubble ${showBubble ? "show" : ""}`}>
+
+                        Estos beneficios combinados aumentan la productividad, mejoran la calidad del software y permiten una mayor personalización y adaptación a las necesidades de los usuarios.<BsGraphUpArrow className='Icono_graph' /></div> : <div className='bubble'></div>}
                 </div>
             </div>
         </div>

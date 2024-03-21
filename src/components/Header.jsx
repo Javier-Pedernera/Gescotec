@@ -41,7 +41,8 @@ const Header = () => {
           </li>
                     </ul>
                 </div>
-                <div className="cta">  <Link to="/contactanos" className="link_btn" > Presupuesto</Link > <IoDocumentTextOutline /></div>
+                <div className="cta">  <Link to="/contactanos" className="link_btn" > Presupuesto</Link > <IoDocumentTextOutline />
+                </div>
                 <div className='menuBurgerDiv'>
                     <HamburgerMenu setopen={setopenMenu} />
                 </div>
