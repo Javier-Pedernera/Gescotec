@@ -16,6 +16,7 @@
       transform: translateY(-50%);
       &::before,
       &::after {
+
         content: '';
         width: 100%;
         height: 2px;
@@ -78,6 +79,7 @@
       position: absolute;
       top: 0;
       right: -100%;
+      display: none;
       width: 100%;
       height: 40%;
       background-color: #efeeeee4;
@@ -88,6 +90,7 @@
         padding-top: 30px;
       }
       &.open {
+        display: flex;
         right: 0;
         z-index: 3;
         border-radius: 0px 0px 0px 550px ;

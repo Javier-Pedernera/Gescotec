@@ -1,11 +1,18 @@
 .equipo {
-    height: 100vh;
-    padding: 40px 0;
-    height: 100vh;
+    // height: 100vh;
+    padding: 40px;
+    height: 100%;
     .equipo-intro {
-      text-align: center;
-      margin-bottom: 40px;
-  
+        display: flex;
+        justify-content: space-around;    
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+        align-items: center;
+      img{
+        height: 30%;
+        width: 30%;
+        }
       h4 {
         font-size: 2.5rem;
         font-weight: 700;
@@ -15,44 +22,71 @@
   
       p {
         font-size: 1.2rem;
-        color: #666;
+        color: #595959;
+        font-weight: 500;
         line-height: 1.6;
       }
+
+      .empresaDescripcion{
+        margin-top: 30px;
+        max-width: 60%;
+        text-align: center;
     }
-  
-    // .miembro-equipo-card {
+    }
+    .equipo-descripcion {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 50px;
+      
+        .descripcion-item {
+          width: 40%;
+          margin-bottom: 30px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+      
+          h5 {
+            color: #333;
+            margin-bottom: 10px;
+          }
+      
+          p {
+            color: #666;
+            margin-bottom: 20px;
+          }
+      
+          .descripcion-imagen {
+            width: 100%;
+            border-radius: 8px;
+          }
+        }
         
-    //   .card {
-    //     border: 1px solid #eee;
-    //     border-radius: 10px;
-    //     transition: transform 0.3s ease;
-  
-    //     &:hover {
-    //       transform: translateY(-5px);
-    //     }
-  
-    //     .card-content {
-    //       padding: 20px;
-  
-    //       .nombre {
-    //         font-size: 1.5rem;
-    //         font-weight: 700;
-    //         color: #333;
-    //       }
-  
-    //       .cargo {
-    //         font-size: 1.2rem;
-    //         color: #666;
-    //         margin-bottom: 10px;
-    //       }
-  
-    //       .experiencia {
-    //         font-size: 1rem;
-    //         color: #888;
-    //       }
-    //     }
-    //   }
-    // }
+        .descripcion-item2 {
+            align-self: flex-end;
+            width: 40%;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            h5 {
+              color: #333;
+              margin-bottom: 10px;
+            }
+        
+            p {
+              color: #666;
+              margin-bottom: 20px;
+            }
+        
+            .descripcion-imagen {
+              width: 100%;
+              border-radius: 8px;
+            }
+          }
+      }
+   
   }
   
   

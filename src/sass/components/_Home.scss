@@ -151,3 +151,30 @@
     opacity: 1; // Se vuelve completamente visible
   }
 }
+
+.bubble {
+  // position: fixed;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 100px;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  font-weight: 500;
+  // color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 10px 10px 100px 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  align-self: center;
+   @media (max-width: 760px){
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 20px 20px;
+  }
+  &.show {
+    opacity: 1;
+  }
+}
