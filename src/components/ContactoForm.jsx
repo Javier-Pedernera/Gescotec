@@ -3,6 +3,7 @@ import { TextField, Checkbox, Button, FormControlLabel, Container, Typography } 
 import { styled } from '@mui/system';
 import { css } from '@emotion/react';
 import '../sass/components/_contactoForm.scss'
+import { useTheme } from '../contexts/ThemeContext';
 
 const FormContainer = styled('form')({
     marginTop: 16,
@@ -39,6 +40,7 @@ const SubmitButton = styled(Button)(
 );
 
 const ContactoForm = () => {
+    const { openMenu, setOpenMenu } = useTheme();
     const [formData, setFormData] = useState({
         nombre: '',
         apellidos: '',
@@ -76,7 +78,7 @@ const ContactoForm = () => {
     };
 
     return (
-        <Container maxWidth="lg">
+        <Container className={`container_Form ${openMenu? 'blur' : ''}`} maxWidth="lg">
             <Typography variant="h4" align="center" gutterBottom>Contáctanos</Typography>
             <FormContainer onSubmit={handleSubmit}>
                 <RowContainer>

@@ -1,7 +1,19 @@
 .equipo {
-    // height: 100vh;
+    &.blur{
+        filter: blur(4px);
+    }
+    font-family: var(--font-poppins);
     padding: 40px;
     height: 100%;
+     h4{
+        font-family: var(--font-poppins);
+    }
+    p{
+        font-family: var(--font-poppins);
+    }
+    h5{
+        font-family: var(--font-poppins);
+    }
     .equipo-intro {
         display: flex;
         justify-content: space-around;    
@@ -14,6 +26,7 @@
         width: 30%;
         }
       h4 {
+        
         font-size: 2.5rem;
         font-weight: 700;
         color: #333;
@@ -25,13 +38,11 @@
         color: #595959;
         font-weight: 500;
         line-height: 1.6;
+        @media (max-width: 767px) {
+                 font-size: 12px;
+        }
       }
 
-      .empresaDescripcion{
-        margin-top: 30px;
-        max-width: 60%;
-        text-align: center;
-    }
     }
     .equipo-descripcion {
         display: flex;
@@ -41,52 +52,123 @@
         margin-top: 50px;
       
         .descripcion-item {
-          width: 40%;
-          margin-bottom: 30px;
+          width: 60%;
+          margin-bottom: 50px;
+          margin-top: 50px;
           display: flex;
           flex-direction: row;
           align-items: center;
-      
+          @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+   }    
           h5 {
             color: #333;
             margin-bottom: 10px;
+            @media (max-width: 767px) {
+                font-size: 15px;
+                font-weight: 600;
+       }    
           }
       
           p {
             color: #666;
             margin-bottom: 20px;
+            @media (max-width: 767px) {
+                font-size: 11px;
+       }
           }
       
           .descripcion-imagen {
-            width: 100%;
+            width: 40%;
             border-radius: 8px;
+            @media (max-width: 767px) {
+                width: 70%;
+       }    
           }
         }
         
         .descripcion-item2 {
+            
             align-self: flex-end;
-            width: 40%;
+            width: 60%;
             margin-bottom: 30px;
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
+            @media (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+       }    
             h5 {
               color: #333;
               margin-bottom: 10px;
+              @media (max-width: 767px) {
+                font-size: 15px;
+                font-weight: 600;
+       }    
             }
         
             p {
               color: #666;
               margin-bottom: 20px;
+              @media (max-width: 767px) {
+                font-size: 11px;
+       }
             }
         
             .descripcion-imagen {
-              width: 100%;
-              border-radius: 8px;
-            }
+                width: 40%;
+                border-radius: 8px;
+                @media (max-width: 767px) {
+                    width: 70%;
+           }    
+              }
           }
       }
    
   }
   
-  
+  @media (max-width: 767px) {
+    .equipo-intro {
+      flex-direction: column-reverse; /* Cambia a diseño de columna en dispositivos móviles */
+      align-items: center;
+      text-align: center;
+    
+    }
+    
+    .equipo-intro img {
+      height: auto; /* Ajusta el tamaño de la imagen para dispositivos móviles */
+      width: 70%; /* Ajusta el tamaño de la imagen para dispositivos móviles */
+      margin-bottom: 20px; /* Añade espacio entre la imagen y el texto en dispositivos móviles */
+    }
+  }
+  .empresaDescripcion{
+    margin-top: 10px;
+    width: 100%;
+}
+  .empresaDescripcion{
+    margin-top: 30px;
+    width: 60%;
+    text-align: center;
+    @media (max-width: 767px) {
+        width: 100%;       
+    }
+}
+.equipo_presentacion{
+    h5{
+        @media (max-width: 767px) {
+            font-size: medium;  
+            font-weight: 600;
+        }
+    }
+    p{
+        @media (max-width: 767px) {
+            font-size: small;  
+            // font-weight: 600;
+        }
+        margin-bottom: 30px;
+    }
+}

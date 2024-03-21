@@ -1,8 +1,23 @@
 
+.container_Form{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    &.blur{
+        filter: blur(4px);
+    }
+}
+.css-1oqqzyl-MuiContainer-root{
+    display: flex;
+}
 .div_Form{
+   
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     & .submit_btn{
     background-color: #1c8bbf;
     &:hover{
@@ -10,7 +25,8 @@
     }
 }
 }
-form{
+form{ 
+    width: 80%;
     margin-bottom: 100px;
     & hr{
         border-top: #BCBCBC;
