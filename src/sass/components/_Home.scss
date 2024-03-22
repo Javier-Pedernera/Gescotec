@@ -234,17 +234,16 @@
   display: flex;
   align-items: center;
   width: 90%;
-  height: 100px;
-  bottom: 20px;
-  right: 20px;font-size: large;
+  height: 120px;
+  margin-bottom: 30px;
+  // right: 20px;
+  font-size: large;
   color: rgb(76, 76, 76);
   // background-color: #b45311;
   border: 1px solid rgb(233, 233, 233);
   font-weight: 500;
-  // color: var(--primary-color);
-  // padding: 10px 20px;
   border-radius: 10px ;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0 1px 1px rgb(162, 162, 162); 
   opacity: 0;
   transition: opacity 0.8s ease;
@@ -257,6 +256,7 @@
   }
   &.show {
     opacity: 1;
+
   }
   .Icono_graph{
     width: 25%;
@@ -265,4 +265,9 @@
     color: var(--primary-color);
     padding: 10px;
   }
+  .text_Final{
+    display: flex;
+    text-align: center;
+  width: 90%;
+}
 }

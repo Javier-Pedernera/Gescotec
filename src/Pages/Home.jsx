@@ -8,11 +8,13 @@ import { Link } from 'react-router-dom';
 import { IoDocumentTextOutline } from 'react-icons/io5';
 import { GrAdd } from "react-icons/gr";
 import { BsGraphUpArrow } from "react-icons/bs";
+import startTypingAnimation from '../utils/typingAnimation';
 
 const Home = () => {
 
     const { openMenu, setOpenMenu } = useTheme();
     const [showBubble, setShowBubble] = useState(false);
+    const [typedText, setTypedText] = useState('');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -26,6 +28,17 @@ const Home = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [showBubble]);
 
+    useEffect(() => {
+        if(showBubble){
+            const introText = `"Estos beneficios combinados aumentan la productividad, mejoran la calidad del software y permiten una mayor personalización y adaptación a las necesidades de los usuarios"`;
+        const intervalId = startTypingAnimation(introText, 30, setTypedText);
+        return () => clearInterval(intervalId);
+        }
+        
+
+        // console.log("intervalId", intervalId,"setTypedText",setTypedText);
+        
+    }, [showBubble]);
 
     const cardsData = [
         {
@@ -122,8 +135,12 @@ const Home = () => {
 
                     </div>
                     {showBubble ? <div className={`bubble ${showBubble ? "show" : ""}`}>
-
-                        Estos beneficios combinados aumentan la productividad, mejoran la calidad del software y permiten una mayor personalización y adaptación a las necesidades de los usuarios.<BsGraphUpArrow className='Icono_graph' /></div> : <div className='bubble'></div>}
+                        <div className='text_Final'>
+                            {typedText}
+                        </div>
+                        
+                        {/* Estos beneficios combinados aumentan la productividad, mejoran la calidad del software y permiten una mayor personalización y adaptación a las necesidades de los usuarios. */}
+                        <BsGraphUpArrow className='Icono_graph' /></div> : <div className='bubble'></div>}
                 </div>
             </div>
         </div>

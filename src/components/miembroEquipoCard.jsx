@@ -21,13 +21,12 @@ const MiembroEquipo = ({ nombre, cargo, experiencia, foto, linkedin }) => {
                 </div>
 
                 <div className='exp_in'>
-                    <Typography className='exp' variant="body2">
+                    {/* <Typography className='exp' variant="body2">
                         Experiencia: {experiencia}
-                    </Typography>
+                    </Typography> */}
                     <Link to={linkedin} target="_blank" className='link_in'> <ImLinkedin className='logo_in' /></Link>
                 </div>
 
-                {/* <a href={linkedin} className="linkedin-link" target="_blank" rel="noopener noreferrer">Ver en LinkedIn</a> */}
             </CardContent>
         </Card>
     );

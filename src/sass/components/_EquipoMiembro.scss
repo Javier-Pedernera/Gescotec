@@ -38,13 +38,13 @@
   
       .MuiTypography-h6 {
         font-family: var(--font-robotoFlex);
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 700;
         color: #333;
       }
   
       .MuiTypography-subtitle1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #666;
         font-family: var(--font-robotoFlex);
       }
@@ -72,21 +72,23 @@
     width: 80%;
 }
 .link_in{
-    display: flex;
-    justify-content: flex-end;
-    width: 15%;
-    color: #1C8BBF;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  color: #1C8BBF;
 }  
 .exp_in{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
 }
 .logo_in{
     height: 50px;
     width: 50px;
 }
 .Nombre_cargo{
+  // font-family: var(--font-poppins);
+  width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,4 +100,9 @@
 
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.equipo-item.css-bhp9pd-MuiPaper-root-MuiCard-root{
     border-radius: 20px;
+}
+.MuiCardContent-root.seccInfo.css-46bh2p-MuiCardContent-root{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
 }
