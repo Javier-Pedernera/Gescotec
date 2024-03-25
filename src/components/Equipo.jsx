@@ -11,7 +11,7 @@ const Equipo = () => {
     const [showVision, setShowVision] = useState(false);
     const [showImpactStats, setShowImpactStats] = useState(false);
     const [typedText, setTypedText] = useState('');
-    
+
     const equipoData = [
         { nombre: 'Marcos Celiz', cargo: 'CEO', experiencia: '', foto: 'https://res.cloudinary.com/dbwmesg3e/image/upload/v1710947181/GescotecPage/1575496059804_f3clx4.jpg', linkedin: "https://www.linkedin.com/in/marcos-celiz-ab271110" },
         { nombre: 'Pablo Charras', cargo: 'CTO', experiencia: '', foto: 'https://res.cloudinary.com/dbwmesg3e/image/upload/v1710947151/GescotecPage/1651870975631_bnlvqs.jpg', linkedin: "https://www.linkedin.com/in/pablo-charras-700a962" },
@@ -108,7 +108,7 @@ const Equipo = () => {
                             </Typography>
                         </div>
 
-                        <img src="https://res.cloudinary.com/dbwmesg3e/image/upload/v1711038090/GescotecPage/20943438_pskkun.jpg" alt="Visión" className="descripcion-imagen" />
+                        <img src="https://res.cloudinary.com/dbwmesg3e/image/upload/v1711376915/GescotecPage/20943438_pskkun-removebg-preview_af3ygy.png" alt="Visión" className="descripcion-imagen" />
                     </div>
                     {/* </Parallax> */}
                     <div className={`descripcion-item impact-stats from-left ${showImpactStats ? 'show-impact-stats' : ''}`}>
@@ -121,7 +121,7 @@ const Equipo = () => {
                             </Typography>
                         </div>
 
-                        <img src="https://res.cloudinary.com/dbwmesg3e/image/upload/v1711038525/GescotecPage/Scientists_studying_neural_connections_uxhbrn.jpg" alt="Estadísticas" className="descripcion-imagen" />
+                        <img src="https://res.cloudinary.com/dbwmesg3e/image/upload/v1711376888/GescotecPage/Scientists_studyingremovebg-preview_hqry3g.png" alt="Estadísticas" className="descripcion-imagen" />
                     </div>
                 </div>
 

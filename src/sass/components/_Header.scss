@@ -3,9 +3,9 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
-  background-color: #e5e5e5;
+  background-color: #f2f2f2;
   color: white;
-  box-shadow: 0px 4px 2px 0px rgba(168,168,168,1);
+  box-shadow: 0px 4px 2px 0px rgba(168, 168, 168, 0.91);
   
 
   .logo {
@@ -56,15 +56,20 @@
     min-width: 140px;
     color: white;
     padding: 10px 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 0px 2px 2px 0px rgba(168,168,168,1);
+    transition: background-color 0.5s ease;
     &:hover {
       background-color: #29B6F6;
+      color: rgb(230, 230, 230);
+      & .link_btn{
+        color: rgb(230, 230, 230);
     }
+  }
   }
 }
 

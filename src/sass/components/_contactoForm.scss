@@ -2,7 +2,7 @@
 .All_div{
     width: 100%;
     height: 100%;
-    
+
 }
 .container_Form{
     padding: 30px;
@@ -32,7 +32,7 @@
         display: flex;
     }
 .div_Form{
- 
+    
     display: flex;
     justify-content: center;
     width: 90%;
@@ -44,7 +44,7 @@
 }
 }
 form{ 
-    
+
     width: 80%;
     margin-bottom: 100px;
     @media (max-width: 768px) {
@@ -69,16 +69,6 @@ form{
         border-color: #BCBCBC;
     }
 }
-// div.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
-//     // background-color: #1c8bbf;
-//     &:hover{
-//         outline: red;
-        
-// }
-//         &:focus-visible {
-//     outline: none;
-// }
-// }
 
 .alert_Success {
     opacity: 0;
@@ -97,18 +87,6 @@ form{
     z-index: 1;
 }
 
-
-
-// .alert-enter-active {
-//     opacity: 1;
-//     transition: opacity 500ms ease-in;
-// }
-
-// .alert-exit {
-//     opacity: 1;
-// }
-
-// .alert-exit-active {
-//     opacity: 0;
-//     transition: opacity 500ms ease-out;
-// }
+form.css-1wh62b1{
+    background-color: #eceaead1;
+}
