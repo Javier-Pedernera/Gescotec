@@ -3,19 +3,21 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
-  // background-color: #333;
+  background-color: #e5e5e5;
   color: white;
+  box-shadow: 0px 4px 2px 0px rgba(168,168,168,1);
+  
 
   .logo {
-    background-image: url('../../assets/images/logo.png');
+    background-image: url('../../assets/images/logo5.png');
     background-size: cover;
-    width: 90px;
+    width: 80px;
     height: 80px;
     display: flex;
     background-position: center;
     // font-size: 24px;
     // font-weight: bold;
-    border-radius: 30px;
+    border-radius: 5px;
   }
 
   .menu {
@@ -59,6 +61,7 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 0px 2px 2px 0px rgba(168,168,168,1);
     &:hover {
       background-color: #29B6F6;
     }
