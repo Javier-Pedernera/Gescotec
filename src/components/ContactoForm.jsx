@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { TextField, Checkbox, Button, FormControlLabel, Container, Typography, CircularProgress } from '@mui/material';
+import { TextField, Checkbox, Button, FormControlLabel, Container, Typography, CircularProgress, MenuItem } from '@mui/material';
 import { styled } from '@mui/system';
 import { css } from '@emotion/react';
 import '../sass/components/_contactoForm.scss'
@@ -33,7 +33,7 @@ const FormControl = styled(TextField)(
     `
 );
 const LoaderContainer = styled('div')({
-    position:'fixed',
+    position: 'fixed',
     height: '100%',
     width: '100%',
     // display: 'flex',
@@ -67,7 +67,8 @@ const ContactoForm = () => {
         movil: '',
         pais: '',
         descripcion: '',
-        consentimiento: false
+        consentimiento: false,
+        empleados: ''
     });
 
     const handleChange = (e) => {
@@ -82,7 +83,7 @@ const ContactoForm = () => {
         e.preventDefault();
         console.log(formData);
         setLoading(true);
-        // Lógica para enviar el formulario
+
         emailjs
             .send('service_45txkdg', 'template_t9lq289', formData, {
                 publicKey: 'Y8d1DNvbtNWOse2f3',
@@ -111,7 +112,8 @@ const ContactoForm = () => {
             movil: '',
             pais: '',
             descripcion: '',
-            consentimiento: false
+            consentimiento: false,
+            empleados: ''
         });
     };
     useEffect(() => {
@@ -124,12 +126,14 @@ const ContactoForm = () => {
         }
         return () => clearTimeout(timeout);
     }, [alertaVisible, error]);
+
+    console.log(formData);
     return (<div className='All_div'>
         {loading && (
-                <LoaderContainer >
-                    <CircularProgress />
-                </LoaderContainer>
-            )}
+            <LoaderContainer >
+                <CircularProgress />
+            </LoaderContainer>
+        )}
         {alertaVisible ? <div className='Alert_visible_div'>
             <Alert severity="success" className={`"alert_Success" ${alertaVisible ? "visible" : ""}`}>
                 <AlertTitle>Éxito</AlertTitle>
@@ -156,11 +160,26 @@ const ContactoForm = () => {
                 </RowContainer>
                 <RowContainer>
                     <FormControl label="Empresa" name="empresa" value={formData.empresa} onChange={handleChange} required />
-                    <FormControl label="Producto / Servicio" name="productoServicio" value={formData.productoServicio} onChange={handleChange} />
+                    <FormControl
+                        select
+                        label="Tamaño de la empresa"
+                        name="empleados"
+                        value={formData.empleados}
+                        onChange={handleChange}
+                        required
+                    >
+                        <MenuItem value="0-10 empleados">0 - 10 empleados</MenuItem>
+                        <MenuItem value="10-50 empleados">10 - 50 empleados</MenuItem>
+                        <MenuItem value="50-100 empleados">50 - 100 empleados</MenuItem>
+                        <MenuItem value="100-500 empleados">100 - 500 empleados</MenuItem>
+                        <MenuItem value="más de 500 empleados">Más de 500 empleados</MenuItem>
+                    </FormControl>
+
                 </RowContainer>
                 <FormControl label="Correo electrónico" type="email" name="email" value={formData.email} onChange={handleChange} required />
                 <FormControl label="Móvil" type="tel" name="movil" value={formData.movil} onChange={handleChange} required />
                 <FormControl label="País" name="pais" value={formData.pais} onChange={handleChange} required />
+                <FormControl label="Producto / Servicio de interés" name="productoServicio" value={formData.productoServicio} onChange={handleChange} />
                 <FormControl label="Descripción" name="descripcion" value={formData.descripcion} onChange={handleChange} multiline />
                 <FormControlLabel
                     control={<Checkbox checked={formData.consentimiento} onChange={handleChange} name="consentimiento" color="primary" />}
