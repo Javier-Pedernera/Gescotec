@@ -106,7 +106,7 @@ const Home = () => {
                             className="imageParallax2"
                         >
                             <div className='cont_btn'>
-                                <div className="more_btn"> <GrAdd /> <Link to="/contactanos" className="link_pres_btn" > sobre nosotros</Link >
+                                <div className="more_btn"> <GrAdd /> <Link to="/contactanos" className="link_pres_btn" >¿Quiénes somos?</Link >
                                 </div>
                                 <div className="pres_btn">  <Link to="/contactanos" className="link_pres_btn" > Presupuesto</Link > <IoDocumentTextOutline />
                                 </div>
