@@ -1,8 +1,9 @@
 
 .All_div{
+    display: flex;
     width: 100%;
     height: 100%;
-
+    justify-content: center;
 }
 .container_Form{
     padding: 30px;
@@ -33,7 +34,6 @@
         align-items: center;
     }
 .div_Form{
-    
     display: flex;
     justify-content: center;
     width: 90%;
@@ -70,7 +70,6 @@ form{
         border-color: #BCBCBC;
     }
 }
-
 .alert_Success {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -90,4 +89,7 @@ form{
 
 form.css-1wh62b1{
     background-color: #eceaead1;
+}
+.MuiContainer-root.MuiContainer-maxWidthLg.container_Form.css-1qsxih2{
+    display: flex;
 }
