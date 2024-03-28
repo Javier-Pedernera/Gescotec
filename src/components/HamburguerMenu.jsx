@@ -22,7 +22,7 @@ const HamburgerMenu = ({ setopen }) => {
         <ul className="menu-list">
           <li><a href="/home">Inicio</a></li>
           <li><a href="/servicios">Servicios</a></li>
-          <li><a href="/equipo">Equipo</a></li>
+          <li><a href="/equipo">¿Quiénes somos?</a></li>
           <li><a href="/contactanos">Contacto</a></li>
           {/* <li><a href="/contactanos">Contacto</a></li> */}
         </ul>

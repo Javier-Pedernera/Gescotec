@@ -95,13 +95,11 @@
 }
 .seccInfo{
   margin-top: 30px;
-  background: linear-gradient(to right, #e5e5e5, #d0d0d0, #e5e5e5); /* Gradiente que simula el metal */
-  // border-radius: 8px; /* Ajusta según sea necesario */
-  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.5); /* Sombra que simula el brillo metálico */
-  // padding: 16px; /* Ajusta según sea necesario */
-  width: 100%;
-  height: 100px;
-  margin-bottom: 16px; /* Ajusta según sea necesario */
+  background: linear-gradient(to right, #e5e5e5, #d0d0d0, #e5e5e5);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.5); 
+  // width: 100%;
+  // height: 100px;
+  margin-bottom: 16px;
 }
 
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiCard-root.equipo-item.css-bhp9pd-MuiPaper-root-MuiCard-root{
