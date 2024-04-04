@@ -29,15 +29,15 @@ const Home = () => {
     }, [showBubble]);
 
     useEffect(() => {
-        if(showBubble){
+        if (showBubble) {
             const introText = `"Estos beneficios combinados aumentan la productividad, mejoran la calidad del software y permiten una mayor personalización y adaptación a las necesidades de los usuarios"`;
-        const intervalId = startTypingAnimation(introText, 30, setTypedText);
-        return () => clearInterval(intervalId);
+            const intervalId = startTypingAnimation(introText, 30, setTypedText);
+            return () => clearInterval(intervalId);
         }
-        
+
 
         // console.log("intervalId", intervalId,"setTypedText",setTypedText);
-        
+
     }, [showBubble]);
 
     const cardsData = [
@@ -138,8 +138,6 @@ const Home = () => {
                         <div className='text_Final'>
                             {typedText}
                         </div>
-                        
-                        {/* Estos beneficios combinados aumentan la productividad, mejoran la calidad del software y permiten una mayor personalización y adaptación a las necesidades de los usuarios. */}
                         <BsGraphUpArrow className='Icono_graph' /></div> : <div className='bubble'></div>}
                 </div>
             </div>
