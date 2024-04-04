@@ -106,9 +106,11 @@ const Home = () => {
                             className="imageParallax2"
                         >
                             <div className='cont_btn'>
-                                <div className="more_btn"> <GrAdd /> <Link to="/contactanos" className="link_pres_btn" >¿Quiénes somos?</Link >
+                                <div className="more_btn">
+                                    {/* <GrAdd />  */}
+                                    <Link to="/equipo" className="link_pres_btn" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>¿Quiénes somos?</Link >
                                 </div>
-                                <div className="pres_btn">  <Link to="/contactanos" className="link_pres_btn" > Presupuesto</Link > <IoDocumentTextOutline />
+                                <div className="pres_btn">  <Link to="/contactanos" className="link_pres_btn" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} > Presupuesto</Link > <IoDocumentTextOutline />
                                 </div>
                             </div>
 
