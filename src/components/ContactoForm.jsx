@@ -57,6 +57,9 @@ const ContactoForm = () => {
     const [error, setError] = useState('');
     const { openMenu, setOpenMenu } = useTheme();
     const [loading, setLoading] = useState(false);
+    const publicKey = import.meta.env.VITE_API_PUBLICKEY;
+    const service = import.meta.env.VITE_API_SERVICE;
+    const template = import.meta.env.VITE_API_TEMPLATE;
 
     const [formData, setFormData] = useState({
         nombre: '',
@@ -85,9 +88,9 @@ const ContactoForm = () => {
         setLoading(true);
 
         emailjs
-            .send('service_45txkdg', 'template_t9lq289', formData, {
-                publicKey: 'Y8d1DNvbtNWOse2f3',
-            })
+        .send(service, template, formData, {
+            publicKey: publicKey,
+        })
             .then(
                 (response) => {
                     console.log('SUCCESS!', response.status, response.text);
